@@ -5,10 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
    base: '/jetapo/', 
   plugins: [react(),tailwindcss()],
-   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  
   theme: {
     extend: {},
   },
