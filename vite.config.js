@@ -3,5 +3,15 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
+   base: '/jetapo/', 
   plugins: [react(),tailwindcss()],
+   content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+ 
+
 })
